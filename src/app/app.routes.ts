@@ -11,6 +11,9 @@ export const routes: Routes = [
      {
         path: 'search',loadComponent:()=> import('./gifs/pages/search-page/search-page.component').then(m=>m.SearchPageComponent),
      },
+     {
+        path:'**',redirectTo: 'trending', pathMatch: 'full'
+     }
     ]
   },
 

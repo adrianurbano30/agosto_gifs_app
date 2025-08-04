@@ -1,11 +1,11 @@
 
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4">
 
 
   @for (gif of gifs(); track gif) {
 
-    <app-gif-list-item [imageurl]="gif" />
+    <app-gif-list-item [imageurl]="gif.url" />
 
   }
 

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { GifListComponent } from "../../components/gif-list/gif-list.component";
 
 const imageUrls: string[] = [
@@ -22,4 +22,8 @@ const imageUrls: string[] = [
   templateUrl: './trending-page.component.html',
 
 })
-export class TrendingPageComponent { }
+export class TrendingPageComponent {
+
+  gifs = signal(imageUrls);
+
+ }
